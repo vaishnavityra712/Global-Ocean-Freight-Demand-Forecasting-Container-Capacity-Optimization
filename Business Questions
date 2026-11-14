@@ -1,0 +1,61 @@
+Assignment 01 
+10,000
+Total shipment bookings
+
+Verified from the booking ID column.
+
+Now let's understand the business meaning
+Imagine a Maersk planning analyst receives 10,000 customer booking records.
+
+They need to understand:
+- How much shipping demand exists?
+- Which routes have the highest demand?
+- Which container types are most popular?
+- How many bookings are cancelled?
+A total booking count alone doesn't answer these questions. That's why we move into operational analysis.
+
+Assignment 02 
+Highest booking volume
+1,175
+CNNGB-DEHAM
+Total bookings
+10,000
+Top route's share
+11.75%
+
+Business interpretation
+Your analysis indicates that the Ningbo–Hamburg lane has the highest booking volume in this dataset.
+
+You would investigate:
+1. Does this route have sufficient vessel capacity?
+2. Are there enough 20FT and 40FT containers?
+3. Is demand increasing week over week?
+4. Is the route experiencing port congestion?
+5. Would additional capacity improve operational performance?
+Important: 1,175 bookings do not automatically mean 1,175 containers. Each booking can contain multiple containers.
+
+Assignment 03
+
+Business interpretation
+- 40HC: Highest demand, representing 39.05% of bookings.
+- 40FT: Second highest, representing 33%.
+- 20FT: Represents 27.95%.
+This suggests that high-cube containers account for the largest share of customer bookings.
+
+
+Important: Booking count vs TEU
+Remember:
+Container	TEU
+20FT	1
+40FT	2
+40HC	2
+
+Let's calculate the total TEU represented by the bookings.
+- 40HC: 3,905 × 2 = 7,810 TEU
+- 40FT: 3,300 × 2 = 6,600 TEU
+- 20FT: 2,795 × 1 = 2,795 TEU
+
+
+
+
+For equipment planning, the fleet company needs to know whether sufficient 40HC equipment is available at the right ports and at the right time.
