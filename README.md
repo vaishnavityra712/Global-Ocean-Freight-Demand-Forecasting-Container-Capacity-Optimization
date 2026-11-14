@@ -1,2 +1,2 @@
 # Global-Ocean-Freight-Demand-Forecasting-Container-Capacity-Optimization
-A Supply Chain Decision Intelligence System that forecasts container demand, identifies capacity shortages, recommends container repositioning and quantifies the financial impact.
+Business case: Analyse ocean freight bookings, container utilization, route performance, customer demand, and operational efficiency to identify opportunities for better transportation planning.
