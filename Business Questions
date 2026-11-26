@@ -59,3 +59,107 @@ Let's calculate the total TEU represented by the bookings.
 
 
 For equipment planning, the fleet company needs to know whether sufficient 40HC equipment is available at the right ports and at the right time.
+
+Assignment 04
+Business interpretation
+Status	       Business meaning
+Confirmed	     Customer booking accepted
+Completed	     Shipment completed
+Cancelled	     Booking cancelled
+Rolled	       Booking moved to another sailing
+
+Three observations:
+- 57.6% are confirmed, representing the largest booking category.
+- 8.23% are cancelled, which deserves further investigation.
+- 10.08% are rolled, potentially indicating capacity constraints, scheduling changes or operational disruptions.
+Important: A rolled booking is not necessarily a failed shipment. It may simply have been transferred to a later sailing.
+
+Assignment 05
+Business interpretation
+"Which shipping route needs immediate investigation?"
+Your answer:
+"The Shanghai–Antwerp route has the highest booking cancellation rate at 9.88%."
+I would investigate 
+-booking patterns
+-vessel capacity
+-port delays 
+-customer cancellation reasons 
+to identify the underlying cause.
+Note: These are possible investigation areas, not confirmed causes in our dataset.
+
+We want to establish:
+- Which container type has the highest cancellation rate?
+- Is 40HC demand accompanied by higher cancellations?
+- Should equipment allocation be investigated further?
+Business interpretation
+Container 	Cancellation rate	Observation
+40HC	      8.86%	Highest
+40FT	      8.30%	Second highest
+20FT	      7.26%	Lowest
+
+Three observations:
+1. 40HC has the highest cancellation rate.
+2. 40FT also has a higher cancellation rate than 20FT.
+3. 20FT bookings appear relatively more stable.
+Important: This is a correlation in our simulated dataset, not proof that 40HC equipment availability causes cancellations.
+
+Assignment 06
+-Which customers contribute the most bookings?
+-How concentrated is booking volume among major customers?
+-Which customers might require closer operational coordination?
+
+Business interpretation
+Imagine you're presenting this to Maersk's Ocean Planning Manager.
+
+Your findings:
+- CUST0074 and CUST0041 are the highest-volume customers, with 126 bookings each.
+- The Top 10 customers collectively account for 11.77% of all bookings.
+- Booking volumes are relatively close among the Top 10 customers.
+
+Assignment 07
+Interesting business insight
+Let's compare your two analyses.
+Customer	Booking rank	TEU rank
+CUST0041	2	             1
+CUST0074	1	             7
+CUST0066	5	             3
+CUST0027	4	             9
+
+
+
+CUST0074 has the highest booking count, but CUST0041 consumes the most container capacity among these customers.
+This demonstrates why 
+1. Booking volume and 
+2. TEU consumption
+are two different KPIs.
+
+Assignment 08
+Customer	 Booking            count	       TEU Revenue (USD)
+CUST0041 	 126	               1,445   	      1,578,641.63
+CUST0074	 126	               1,299	        1,410,124.39
+CUST0066	 117	               1,341	        1,440,953.10
+CUST0013	 Not in top 10	     1,357	        1,534,473.57
+
+Why is CUST0041 first in all three analyses?
+Look at the difference:
+- CUST0041 and CUST0074 both have 126 bookings.
+- CUST0041 consumes 1,445 TEU, compared with 1,299 TEU for CUST0074.
+- CUST0041 generates approximately $168,517 more in estimated booking revenue than CUST0074.
+CUST0041 has higher capacity consumption and estimated revenue.
+
+We've completed these Excel analyses
+1. Total bookings
+2. Busiest shipping route
+3. Container type distribution
+4. Cancellation analysis
+5. Route-wise cancellation analysis
+6. Customer booking, TEU and revenue analysis
+
+PHASE 2: Demand Forecasting
+How many TEUs should we expect to transport on each shipping route over the coming weeks?
+need to estimate future demand so that the company can plan:
+- Vessel capacity.
+- Container availability.
+- Empty container repositioning.
+- Shipping schedules.
+- Freight revenue.
